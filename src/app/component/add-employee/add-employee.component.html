@@ -1,13 +1,13 @@
 
 <div class="card">
   <h3 class="card-header">
-    Add Employee
+    Agregar empleado
   </h3>
   <div class="card-body">
     <form ngNativeValidate [formGroup]="employeesForm" (ngSubmit)="handleSubmit()">
 
       <div class="mb-3">
-        <label class="form-label">Name</label>
+        <label class="form-label">Nombre</label>
         <input 
           class="form-control"
           required
@@ -19,7 +19,7 @@
       </div>
 
       <div class="mb-3">
-        <label class="form-label">E-mail</label>
+        <label class="form-label">Correo electrónico</label>
         <input 
           class="form-control"
           type="email" 
@@ -30,7 +30,7 @@
         >
       </div>
       
-      <button type="submit" class="btn btn-primary m-1">Submit</button>
+      <button type="submit" class="btn btn-primary m-1">Guardar</button>
       <button type="button" routerLink="/list-employees" class="btn btn-danger m-1">Cancel</button>
 
     </form>

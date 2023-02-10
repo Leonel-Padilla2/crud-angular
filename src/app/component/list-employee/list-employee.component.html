@@ -1,6 +1,6 @@
 <div class="card">
   <div class="card-header">
-    Employees
+    Lista de empleados
   </div>
   <div class="card-body">
     <div class="table-responsive-sm">
@@ -11,10 +11,10 @@
       align-middle">
         <thead class="table-light">
           <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>E-mail</th>
-            <th>Options</th>
+            <th>Id del empleado</th>
+            <th>Nombre</th>
+            <th>Correo electrónico</th>
+            <th>Acciones</th>
           </tr>
           </thead>
           <tbody class="table-group-divider">
@@ -23,8 +23,8 @@
               <td> {{ employee.name }} </td>
               <td> {{ employee.email }} </td>
               <td class="d-flex"> 
-                <a class="btn btn-primary m-1 w-25" routerLink='/edit-employee/{{ employee.id }}' role="button">Edit</a>
-                <a class="btn btn-danger m-1 w-25" (click)="deleteEmployee(employee.id, iControl)" role="button">Delete</a>
+                <a class="btn btn-primary m-1 w-25" routerLink='/edit-employee/{{ employee.id }}' role="button">Editar</a>
+                <a class="btn btn-danger m-1 w-25" (click)="deleteEmployee(employee.id, iControl)" role="button">Borrar</a>
               </td>
             </tr>
           </tbody>
