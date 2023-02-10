@@ -7,31 +7,31 @@
     <form ngNativeValidate [formGroup]="employeesForm" (ngSubmit)="handleSubmit()">
 
       <div class="mb-3">
-        <label class="form-label">Nombre</label>
+        <label class="form-label">Nombre:</label>
         <input 
           class="form-control"
           required
           type="text" 
           formControlName="name"
           aria-describedby="helpId"
-          placeholder="Enter your name"
+          placeholder="Ingresa tu nombre"
         >
       </div>
 
       <div class="mb-3">
-        <label class="form-label">Correo electrónico</label>
+        <label class="form-label">Correo electrónico:</label>
         <input 
           class="form-control"
           type="email" 
           required
           formControlName="email"
           aria-describedby="helpId"
-          placeholder="Enter your E-mail"
+          placeholder="Ingresa tu correo electrónico"
         >
       </div>
       
-      <button type="submit" class="btn btn-primary m-1">Guardar</button>
-      <button type="button" routerLink="/list-employees" class="btn btn-danger m-1">Cancel</button>
+      <button type="submit" class="btn btn-success m-1">Guardar</button>
+      <button type="button" routerLink="/list-employees" class="btn btn-danger m-1">Cancelar</button>
 
     </form>
   </div>
