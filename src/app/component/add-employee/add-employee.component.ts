@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class AddEmployeeComponent {
   employeesForm: FormGroup
 
-  constructor ( 
+  constructor (
     public form: FormBuilder,
     private employeeService: EmployeeService,
     private router:Router
@@ -23,8 +23,9 @@ export class AddEmployeeComponent {
   }
 
   handleSubmit(): void {
-    this.employeeService.addEmployee(this.employeesForm.value).subscribe()
-    this.router.navigateByUrl('/list-employees')
+    this.employeeService.addEmployee(this.employeesForm.value).subscribe(response => {
+      this.router.navigateByUrl('/list-employees')
+    })
   }
 
 }
