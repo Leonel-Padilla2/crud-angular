@@ -8,14 +8,16 @@ import { EditEmployeeComponent } from './component/edit-employee/edit-employee.c
 import { ListEmployeeComponent } from './component/list-employee/list-employee.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { HomeEmployeeComponent } from './component/home-employee/home-employee.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     AddEmployeeComponent,
     EditEmployeeComponent,
-    ListEmployeeComponent
+    ListEmployeeComponent,
+    HomeEmployeeComponent
   ],
   imports: [
     BrowserModule,
