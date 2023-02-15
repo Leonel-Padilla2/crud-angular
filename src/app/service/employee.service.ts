@@ -16,7 +16,7 @@ export class EmployeeService {
   addEmployee (employeeData: Employee):Observable<any> {
     return this.HTTPClient.post( this.URL + "?insert=1", employeeData )
   }
-
+ /* Instrucciones */
   getEmployees () {
     return this.HTTPClient.get( this.URL )
   }
